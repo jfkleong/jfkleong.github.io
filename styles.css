@@ -1,0 +1,382 @@
+/*
+
+Title: Stylesheet Template
+
+Author: Maurice van Cooten
+
+*/
+
+body {
+	background: black;
+	font-size: 16px;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	margin:0 auto;
+}
+
+a {
+	color:crimson;
+	text-decoration:none;
+}
+
+a:hover {
+	color:red;
+}
+
+header {
+	color: white;
+}
+
+h1 {
+  display: flex;
+  justify-content: flex-start;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+}
+
+/*img {
+  max-width: 100%;
+  height:auto;
+}
+*/
+p {
+  margin: 0 auto;
+}
+
+/* Layout
+------------------------------------------*/
+
+header,
+.container,
+footer {
+	margin: 0 auto;
+	width:88%;
+	max-width: 960px;
+}
+
+.wrapper {
+	padding:1em 0;
+	background: #ffffff;	
+}
+
+.spacing {
+  margin-top: 15px;
+}
+
+/* Navigation
+------------------------------------------*/
+
+nav {
+  margin-top: 13px;
+}
+
+nav ul {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav ul li {
+  margin-right: .5em;
+  font-family: sans-serif;
+}
+
+nav ul li a {
+  background: grey;
+  padding: .5em .5em;
+  border-radius: 15px 0;
+}
+
+/* Video
+------------------------------------------*/
+
+.video-container {
+  max-width:100%;
+}
+
+.video {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+}
+
+.video iframe,
+.video object,
+.video embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100%;
+}
+
+
+/* Slider
+------------------------------------------*/
+
+img {
+    max-width:100%;
+    display:block;
+}
+
+.slider {
+    max-width:960px;
+    position:relative;
+}
+
+.slides {
+    padding:0;
+    margin:0;
+}
+
+.frame {
+    max-width: 960px;
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.slides {
+    display: inline-block;
+}
+
+.frame li {
+    position: relative;
+    display: inline-block;
+    max-width: 960px;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+    display: block;
+    cursor: pointer;
+}
+
+.next {
+    right: 0;
+}
+
+.prev {
+    left: 0;
+}
+
+.next svg, .prev svg {
+    width: 64px;
+}
+            
+
+/* Singularity GS 
+------------------------------------------*/
+
+/* Source: https://github.com/philwareham/hive-framework */
+
+.layout--span-1-12,
+.layout--span-1-6,
+.layout--span-7-12,
+.layout--span-1-4,
+.layout--span-5-8,
+.layout--span-9-12,
+.layout--span-1-3,
+.layout--span-4-6,
+.layout--span-7-9,
+.layout--span-10-12,
+.layout--span-1-8,
+.layout--span-5-12,
+.layout--span-4-9,
+.layout--span-1-9,
+.layout--span-4-12 {
+  width: 100%;
+  float: right;
+  margin-left: 0;
+  margin-right: 0;
+  clear: none;
+  box-sizing: border-box;
+  clear: both;
+}
+
+@media (min-width: 24em) {
+  .layout--span-1-3.at-break1 {
+    width: 48.3587573%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0;
+    clear: none;
+    clear: both;
+  }
+
+  .layout--span-4-6.at-break1 {
+    width: 48.3587573%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+  }
+
+  .layout--span-7-9.at-break1 {
+    width: 48.3587573%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0;
+    clear: none;
+    clear: both;
+  }
+
+  .layout--span-10-12.at-break1 {
+    width: 48.3587573%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+  }
+}
+@media (min-width: 36em) {
+  .layout--span-1-6.at-break2 {
+    width: 48.3587573%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0;
+    clear: none;
+    clear: both;
+  }
+
+  .layout--span-7-12.at-break2 {
+    width: 48.3587573%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+  }
+
+  .layout--span-1-4 {
+    width: 31.1450097%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0;
+    clear: none;
+    clear: both;
+  }
+
+  .layout--span-5-8 {
+    width: 31.1450097%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 34.4274951%;
+    clear: none;
+  }
+
+  .layout--span-9-12 {
+    width: 31.1450097%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+  }
+
+  .layout--span-1-8 {
+    width: 65.5725049%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0;
+    clear: none;
+    clear: both;
+  }
+
+  .layout--span-5-12 {
+    width: 65.5725049%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+  }
+}
+@media (min-width: 48em) {
+  .layout--span-1-6 {
+    width: 48.3587573%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0;
+    clear: none;
+    clear: both;
+  }
+
+  .layout--span-7-12 {
+    width: 48.3587573%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+  }
+
+  .layout--span-1-3,
+  .layout--span-1-3.at-break1 {
+    width: 22.5381359%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0;
+    clear: none;
+    clear: both;
+  }
+
+  .layout--span-4-6,
+  .layout--span-4-6.at-break1 {
+    width: 22.5381359%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 25.8206214%;
+    clear: none;
+  }
+
+  .layout--span-7-9,
+  .layout--span-7-9.at-break1 {
+    width: 22.5381359%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 51.6412427%;
+    clear: none;
+  }
+
+  .layout--span-10-12,
+  .layout--span-10-12.at-break1 {
+    width: 22.5381359%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+  }
+
+  .layout--span-4-9 {
+    width: 48.3587573%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 25.8206214%;
+    clear: none;
+  }
+
+  .layout--span-1-9 {
+    width: 74.1793786%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0;
+    clear: none;
+    clear: both;
+  }
+
+  .layout--span-4-12 {
+    width: 74.1793786%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
