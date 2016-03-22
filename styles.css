@@ -6,6 +6,10 @@ Author: Maurice van Cooten
 
 */
 
+.slick-prev:before, .slick-next:before { 
+    color:red !important;
+}
+
 footer {
   height: 80px;
 }
@@ -44,11 +48,11 @@ h2 {
   justify-content: center;
 }
 
-/*img {
+img {
   max-width: 100%;
   height:auto;
 }
-*/
+
 p {
   margin: 0 auto;
 }
