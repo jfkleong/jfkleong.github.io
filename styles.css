@@ -57,6 +57,17 @@ p {
   margin: 0 auto;
 }
 
+
+/* Maps
+------------------------------------------*/
+
+#map-canvas {
+float: left;
+height: 300px;
+width: 100%;
+display: block;
+}
+
 /* Layout
 ------------------------------------------*/
 
