@@ -22,7 +22,7 @@
 
 			<h1 class="layout--span-1-6 at-break2">Music School</h1>
 
-			<nav class="layout--span-7-12 at-break2">
+			<nav class="layout--span-7-12 at-break2 nav-collapse">
 				<ul>
 					<li><a href="index.html">HOME</a></li>
 					<li><a href="music.html">MUSIC</a></li>
@@ -123,6 +123,15 @@
 		});
 
 		</script>
+
+		<script src="responsive-nav.min.js"></script>
+
+	    <script>
+	      var navigation = responsiveNav('.nav-collapse', {
+	            transition: 400,
+	            insert: 'after'
+	        });
+    </script>
 		
 
 	</body>
